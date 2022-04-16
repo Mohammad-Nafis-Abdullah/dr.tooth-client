@@ -29,9 +29,18 @@
     @apply border-2 border-black font-medium px-3 py-1 rounded-sm
   }
   .container{
-    @apply mx-auto p-3;
+    @apply mx-auto;
   }
   .border-4{
     @apply border-black;
   }
+}
+
+
+.link{
+  @apply text-lg font-medium text-gray-900/70 hover:text-gray-900 duration-300
+}
+
+.link-active{
+  @apply text-lg font-medium text-gray-900 duration-300 underline underline-offset-8 decoration-4 decoration-gray-900/70
 }
