@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 
 
@@ -13,7 +14,7 @@ function App() {
 
       <Routes>
         <Route path="/home" element={<Navigate to='/'/>}/>
-        <Route path="/" element={''}/>
+        <Route path="/" element={<Home/>}/>
 
         
 
