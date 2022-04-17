@@ -38,11 +38,12 @@
 
 
 .link{
-  @apply text-lg font-medium text-gray-900/70 hover:text-gray-900 duration-300
+  @apply text-lg font-medium text-gray-300 md:text-gray-900/70 md:hover:text-gray-900 hover:text-white duration-300 
 }
 
 .link-active{
-  @apply text-lg font-medium text-gray-900 duration-300 underline underline-offset-8 decoration-4 decoration-gray-900/70
+  @apply text-lg font-medium text-white md:text-gray-900 duration-300 
+  underline underline-offset-8 decoration-4 decoration-white md:decoration-gray-900/70 
 }
 
 
@@ -67,7 +68,8 @@
 }
 
 .service-card>button{
-  @apply w-full py-2 rounded-b-2xl rounded-t-sm border-0 bg-gray-900/90 hover:bg-gray-900 duration-200 text-white text-xl
+  @apply w-full py-2 rounded-b-2xl rounded-t-sm border-0 bg-gray-900/90 
+  hover:bg-gray-900 duration-200 text-white text-xl
 }
 
 .icon{

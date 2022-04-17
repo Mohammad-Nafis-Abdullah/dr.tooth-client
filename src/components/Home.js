@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../images/banner 1.jpeg'
+import banner from '../images/banner.jpg'
 import family from '../images/family.jpg'
 import wedding from '../images/wedding.jpg'
 import mezban from '../images/mezban.jpg'
@@ -30,7 +30,7 @@ const Home = () => {
                     <button>Select</button>
                 </div>
                 <div className='service-card'>
-                    <h6>Traditional Mezban</h6>
+                    <h6>Traditional Mezbani</h6>
                     <img src={mezban} alt="" />
                     <p>Maximum 5 items are included with the packages. Over 5 items 2000 Tk/day will be extra charged for each additional item.</p>
                     <p><CheckIcon className='icon'/>20-50 person <span>30000 Tk/day</span></p>
