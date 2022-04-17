@@ -12,9 +12,9 @@ const Home = () => {
 
     return (
         <section className='container'>
-            <img className='h-[calc(100vh-10.3rem)] md:h-[calc(100vh-5rem)] object-cover w-full' src={banner} alt="" />
-            <div className='py-16 flex flex-wrap justify-center items-center gap-x-5 gap-y-8'>
-                <h4 className='text-center underline text-gray-900/90 basis-full'>Services</h4>
+            <img className='object-cover w-full h-[28rem]' src={banner} alt="" />
+            <h3 className='text-center underline text-gray-900/90 mt-16 mb-10'>Services</h3>
+            <div className='card-container'>
                 {
                     services.map(service => <ServiceCard key={service.id} service={service}/>)
                 }

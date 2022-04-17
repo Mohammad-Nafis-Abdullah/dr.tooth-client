@@ -5,25 +5,25 @@
 
 @layer utilities{
   h1{
-    @apply text-8xl
-  }
-  h2{
-    @apply text-7xl
-  }
-  h3{
     @apply text-6xl
   }
-  h4{
+  h2{
     @apply text-5xl
   }
-  h5{
+  h3{
     @apply text-4xl
   }
-  h6{
+  h4{
     @apply text-3xl
   }
+  h5{
+    @apply text-2xl
+  }
+  h6{
+    @apply text-xl
+  }
   p{
-    @apply text-lg
+    @apply text-base
   }
   button{
     @apply border-2 border-black font-medium px-3 py-1 rounded-sm
@@ -38,17 +38,29 @@
 
 
 .link{
-  @apply text-lg font-medium text-gray-300 md:text-gray-900/70 md:hover:text-gray-900 hover:text-white duration-300 
+  @apply text-base font-medium text-gray-300 md:text-gray-900/70 md:hover:text-gray-900 hover:text-white duration-300 
 }
 
 .link-active{
-  @apply text-lg font-medium text-white md:text-gray-900 duration-300 
+  @apply text-base font-medium text-white md:text-gray-900 duration-300 
   underline underline-offset-8 decoration-4 decoration-white md:decoration-gray-900/70 
 }
 
+.card-container{
+  @apply mb-16 flex flex-wrap justify-center items-center gap-10 max-w-[69rem] mx-auto;
+}
+
+.card-container:hover .service-card:not(:hover){
+  @apply xl:blur-sm;
+}
+
+.service-card:hover{
+  @apply xl:scale-110 xl:z-10;
+}
 
 .service-card{
-  @apply ring-4 ring-gray-900/10 pt-3 basis-[21rem]  min-h-[20rem] rounded-2xl space-y-2;
+  @apply border-2 basis-[21rem] min-h-[20rem] rounded-2xl space-y-2 transition-all duration-500 cursor-default bg-white;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.343);
 }
 
 .service-card h6{
@@ -56,15 +68,15 @@
 }
 
 .service-card img{
-  @apply h-48 w-full rounded-sm object-cover mx-auto
+  @apply h-48 w-full rounded-t-2xl object-cover mx-auto
 }
 
 .service-card>p{
-  @apply px-2 relative text-gray-900/80 text-justify
+  @apply px-2 relative text-gray-900/80 text-justify text-base
 }
 
 .service-card>p>span{
-  @apply inline-block absolute right-4 font-medium text-gray-900 text-[1.2rem]
+  @apply inline-block absolute right-4 font-medium text-gray-900 text-lg
 }
 
 .service-card>button{
@@ -74,4 +86,62 @@
 
 .icon{
   @apply h-8 text-gray-900/90 inline-block mr-2
+}
+
+
+.nafis{
+  @apply border-2 rounded-3xl p-1 cursor-pointer;
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  transition: 0.6s ease transform;
+  background-image: linear-gradient(
+      45deg,
+      #000000e7,
+      #000000cb,
+      #000000ae,
+      #0000007a,
+      #00000034,
+      #00000034,
+      #0000007a,
+      #000000ae,
+      #000000cb,
+      #000000e7
+  );
+  background-size: 500%;
+  background-repeat: repeat;
+  animation: borderglow 3s linear infinite forwards,no-transform 0.6s linear 1s forwards;
+}
+
+.nafis:hover{
+  transform: none;
+}
+
+@keyframes borderglow {
+  0% {
+    background-position: 0px;
+  }
+
+  25% {
+    background-position: 50px;
+  }
+
+  50% {
+    background-position: 100px;
+  }
+
+  75% {
+    background-position: 150px;
+  }
+
+  100% {
+    background-position: 250px;
+  }
+}
+
+@keyframes no-transform {
+  0%{
+    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  }
+  100%{
+    transform: none;
+  }
 }

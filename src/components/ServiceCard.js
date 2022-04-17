@@ -6,8 +6,8 @@ const ServiceCard = ({service}) => {
 
     return (
         <div className='service-card'>
-            <h6>{name}</h6>
             <img src={imgSrc} alt="" />
+            <h6>{name}</h6>
             <p>{details}</p>
             <p><CheckIcon className='icon' />{option1} <span>{price1}</span></p>
             <p><CheckCircleIcon className='icon' />{option2} <span>{price2}</span></p>
