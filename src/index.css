@@ -44,3 +44,32 @@
 .link-active{
   @apply text-lg font-medium text-gray-900 duration-300 underline underline-offset-8 decoration-4 decoration-gray-900/70
 }
+
+
+.service-card{
+  @apply ring-4 ring-gray-900/10 pt-3 basis-[21rem]  min-h-[20rem] rounded-2xl space-y-2;
+}
+
+.service-card h6{
+  @apply text-center text-gray-900/90 font-medium;
+}
+
+.service-card img{
+  @apply h-48 w-full rounded-sm object-cover mx-auto
+}
+
+.service-card>p{
+  @apply px-2 relative text-gray-900/80 text-justify
+}
+
+.service-card>p>span{
+  @apply inline-block absolute right-4 font-medium text-gray-900 text-[1.2rem]
+}
+
+.service-card>button{
+  @apply w-full py-2 rounded-b-2xl rounded-t-sm border-0 bg-gray-900/90 hover:bg-gray-900 duration-200 text-white text-xl
+}
+
+.icon{
+  @apply h-8 text-gray-900/90 inline-block mr-2
+}
