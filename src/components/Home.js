@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useFetch from '../hooks/useFetch';
 import banner from '../images/Banner.jpg';
 import ServiceCard from './ServiceCard';
 
 const Home = () => {
-    const [services,setServices] = useState([]);
-    useEffect(()=> {
-        fetch('service.json')
-        .then(response => response.json())
-        .then(data => setServices(data))
-    },[])
+    const services = useFetch('service.json');
 
     return (
         <section className='container'>
-            <img className='object-cover w-full h-[30rem]' src={banner} alt="" />
+            <img className='object-cover object-right w-full h-[30rem]' src={banner} alt="" />
             <h2 className='text-center underline text-sky-700/90 mt-16 mb-10 font-medium font-serif'>Services</h2>
             <div className='card-container'>
                 {

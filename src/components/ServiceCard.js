@@ -8,7 +8,7 @@ const ServiceCard = ({service}) => {
         <div className='service-card'>
             <img src={imgSrc} alt="" />
             <h5>{name}</h5>
-            <p className='border h-[9.5rem] p-1 overflow-auto'>{details}</p>
+            <p className='h-[9.5rem] p-1 overflow-auto'>{details}</p>
             <p><CheckIcon className='icon' />Price : <span>{price}</span></p>
             <button>Select</button>
         </div>
