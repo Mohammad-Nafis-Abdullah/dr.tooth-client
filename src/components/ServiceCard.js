@@ -1,17 +1,15 @@
 import React from 'react';
-import {CheckIcon,CheckCircleIcon,BadgeCheckIcon} from '@heroicons/react/solid';
+import {CheckIcon} from '@heroicons/react/solid';
 
 const ServiceCard = ({service}) => {
-    const {name,imgSrc, details,option1,price1,option2,price2,option3,price3} = service;
+    const {name,imgSrc, details,price} = service;
 
     return (
         <div className='service-card'>
             <img src={imgSrc} alt="" />
-            <h6>{name}</h6>
-            <p>{details}</p>
-            <p><CheckIcon className='icon' />{option1} <span>{price1}</span></p>
-            <p><CheckCircleIcon className='icon' />{option2} <span>{price2}</span></p>
-            <p><BadgeCheckIcon className='icon' />{option3} <span>{price3}</span></p>
+            <h5>{name}</h5>
+            <p className='border h-[9.5rem] p-1 overflow-auto'>{details}</p>
+            <p><CheckIcon className='icon' />Price : <span>{price}</span></p>
             <button>Select</button>
         </div>
     );

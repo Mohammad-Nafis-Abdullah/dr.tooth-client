@@ -1,38 +1,23 @@
 [
     {
         "id": "625bf42285d55577e2450806",
-        "name": "Family Program",
-        "imgSrc": "images/family.jpg",
-        "details": "Maximum 6 items are included with the packages. Over 6 items 2000 Tk/day will be extra charged for each additional item.",
-        "option1": "20-50 person",
-        "price1": "15000 Tk/day",
-        "option2": "50-100 person",
-        "price2": "25000 Tk/day",
-        "option3": "100+ person",
-        "price3": "40000 Tk/day"
+        "name": "Fillings",
+        "imgSrc": "images/fillings.jpg",
+        "details": "Cavities are all too common and all too easy to get. For most cavities, a filling is the recommended answer. Acids in food and inside your body can easily break down tooth enamel if overexposed. It usually takes about an hour to finish up, and then it's good as new! You might feel pressure while they're working, but it shouldn't be painful.",
+        "price": "8000 Tk/tooth"
     },
     {
         "id": "625bf422e9f4560455bd04fb",
-        "name": "Wedding Ceremony",
-        "imgSrc": "images/wedding.jpg",
-        "details": "Maximum 10 items are included with the packages. Over 10 items 3000 Tk/day will be extra charged for each additional item.",
-        "option1": "20-50 person",
-        "price1": "25000 Tk/day",
-        "option2": "50-100 person",
-        "price2": "40000 Tk/day",
-        "option3": "100+ person",
-        "price3": "70000 Tk/day"
+        "name": "Root Canal",
+        "imgSrc": "images/rootCanal.jpg",
+        "details": "This is one that most people dread, and for fair reasons. Root canals are usually preceded by some pretty awful tooth pain. A root canal means the tissue inside or under your tooth is infected and inflamed. To get rid of the pain, the dentist needs to deaden the nerve and remove the tissue. Sometimes you may need to take an antibiotic before the procedure.",
+        "price": "12000 Tk/tooth"
     },
     {
         "id": "625bf4220a5e9c95ed651c65",
-        "name": "Traditional Mezbani",
-        "imgSrc": "images/mezban.jpg",
-        "details": "Maximum 5 items are included with the packages. Over 5 items 2000 Tk/day will be extra charged for each additional item.",
-        "option1": "20-50 person",
-        "price1": "30000 Tk/day",
-        "option2": "50-100 person",
-        "price2": "45000 Tk/day",
-        "option3": "100+ person",
-        "price3": "70000 Tk/day"
+        "name": "Scaling",
+        "imgSrc": "images/scaling.jpg",
+        "details": "This is by far the most common reason people visit the dentist. Many dentists recommend a cleaning every six months, and some recommend once a year. Either way, it's a very important part of oral health. Your own toothbrush will never be as efficient as the tools a dentist uses to clean your teeth.",
+        "price": "4000 Tk"
     }
 ]
