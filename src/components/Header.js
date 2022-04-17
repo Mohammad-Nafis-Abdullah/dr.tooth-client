@@ -6,12 +6,12 @@ const Header = () => {
     const navigate = useNavigate();
 
     return (
-        <div className='container h-20 px-5 flex justify-between items-center shadow-md'>
+        <div className='container py-5 md:py-0 md:h-20 px-5 flex justify-center md:justify-between items-center shadow-md flex-wrap gap-5'>
             <div className='flex justify-center items-center text-xl gap-2 font-medium text-slate-900'>
                 <img src={logo} className='cursor-pointer h-16' alt="" onClick={()=> navigate('/')}/>
                 <span className='first-letter:text-3xl text-2xl cursor-pointer' onClick={()=> navigate('/')}>Abdullah's Catering</span>
             </div>
-            <nav className="flex items-center justify-center gap-5">
+            <nav className="flex items-center justify-center gap-5 flex-wrap">
                 <NavLink to='/checkout' className={(status)=> status.isActive?'link-active':'link'}>Checkout</NavLink>
                 <NavLink to='/blog' className={(status)=> status.isActive?'link-active':'link'}>Blog</NavLink>
                 <NavLink to='/about' className={(status)=> status.isActive?'link-active':'link'}>About</NavLink>
