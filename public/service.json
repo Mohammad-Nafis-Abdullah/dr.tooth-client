@@ -1,0 +1,38 @@
+[
+    {
+        "id": "625bf42285d55577e2450806",
+        "name": "Family Program",
+        "imgSrc": "images/family.jpg",
+        "details": "Maximum 6 items are included with the packages. Over 6 items 2000 Tk/day will be extra charged for each additional item.",
+        "option1": "20-50 person",
+        "price1": "15000 Tk/day",
+        "option2": "50-100 person",
+        "price2": "25000 Tk/day",
+        "option3": "100+ person",
+        "price3": "40000 Tk/day"
+    },
+    {
+        "id": "625bf422e9f4560455bd04fb",
+        "name": "Wedding Ceremony",
+        "imgSrc": "images/wedding.jpg",
+        "details": "Maximum 10 items are included with the packages. Over 10 items 3000 Tk/day will be extra charged for each additional item.",
+        "option1": "20-50 person",
+        "price1": "25000 Tk/day",
+        "option2": "50-100 person",
+        "price2": "40000 Tk/day",
+        "option3": "100+ person",
+        "price3": "70000 Tk/day"
+    },
+    {
+        "id": "625bf4220a5e9c95ed651c65",
+        "name": "Traditional Mezbani",
+        "imgSrc": "images/mezban.jpg",
+        "details": "Maximum 5 items are included with the packages. Over 5 items 2000 Tk/day will be extra charged for each additional item.",
+        "option1": "20-50 person",
+        "price1": "30000 Tk/day",
+        "option2": "50-100 person",
+        "price2": "45000 Tk/day",
+        "option3": "100+ person",
+        "price3": "70000 Tk/day"
+    }
+]
