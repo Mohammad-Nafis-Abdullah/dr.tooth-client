@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 import Register from "./components/Register";
 import 'react-toastify/dist/ReactToastify.css';
+import Private from "./components/Private";
 
 
 function App() {
@@ -27,8 +28,15 @@ function App() {
       <Routes>
         <Route path="/home" element={<Navigate to='/'/>}/>
         <Route path="/" element={<Home/>}/>
-        <Route path="/checkout" element={<Checkout/>}/>
-        <Route path="/checkout/:id" element={<Checkout/>}/>
+        <Route path="/checkout" element={
+        <Private>
+          <Checkout/>
+        </Private>}/>
+        <Route path="/checkout/:id" element={
+          <Private>
+            <Checkout/>
+          </Private>
+        }/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/login" element={<Login/>}/>

@@ -24,22 +24,22 @@ const Register = (e) => {
             <form ref={formInput} className='max-w-sm mx-auto my-8 p-5 rounded-xl shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] w-full'>
                 <h3 className='text-center mb-10 text-sky-600 font-medium'>Register</h3>
                 <div className="input-container">
-                    <input type="text" name='name' className="input-field" placeholder=" " required=""/>
+                    <input type="text" name='name' className="input-field" required/>
                         <label className="input-label">Name</label>
                 </div>
                 <div className="input-container">
-                    <input type="email" name='email' className="input-field" placeholder=" " required=""/>
+                    <input type="email" name='email' className="input-field" required/>
                         <label className="input-label">Email address</label>
                 </div>
                 <div className="input-container">
-                    <input type="password" name='password' className="input-field" placeholder=" " required=""/>
+                    <input type="password" name='password' className="input-field" required/>
                         <label className="input-label">Password</label>
                 </div>
                 <div className="input-container">
-                    <input type="password" name='confirmPassword' className="input-field" placeholder=" " required=""/>
+                    <input type="password" name='confirmPassword' className="input-field" required/>
                         <label className="input-label">Confirm password</label>
                 </div>
-                <p className='font-medium mb-5 ml-2 flex items-center gap-2'>
+                <p className='font-medium mb-5 flex items-center gap-2'>
                     <CubeIcon className='text-gray-900 h-6'/> Already have an Account. 
                     <Link className='text-sky-700 underline decoration-[3px] underline-offset-2 hover:scale-110 duration-150' to='/login'>Login</Link>
                 </p>
