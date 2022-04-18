@@ -4,7 +4,9 @@ const useFetch = (url,initialValue=[],dependencies=[])=> {
     const [fetchedData,setFetch] = useState(initialValue);
 
     useEffect(()=> {
-        fetch(url).then(response => response.json()).then(data => setFetch(data))
+        fetch(url)
+        .then(response => response.json())
+        .then(data => setFetch(data))
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },dependencies);
 

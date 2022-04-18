@@ -1,8 +1,10 @@
 import React from 'react';
 import {CheckIcon} from '@heroicons/react/solid';
+import { useNavigate } from 'react-router-dom';
 
 const ServiceCard = ({service}) => {
-    const {name,imgSrc, details,price} = service;
+    const {id,name,imgSrc,details,price} = service;
+    const navigate = useNavigate();
 
     return (
         <div className='service-card'>
@@ -10,7 +12,7 @@ const ServiceCard = ({service}) => {
             <h5>{name}</h5>
             <p className='h-[9.5rem] p-1 overflow-auto'>{details}</p>
             <p><CheckIcon className='icon' />Price : <span>{price}</span></p>
-            <button>Select</button>
+            <button onClick={()=> navigate(`/checkout/${id}`)}>Select</button>
         </div>
     );
 };

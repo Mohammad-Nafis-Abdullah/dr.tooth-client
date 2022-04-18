@@ -4,7 +4,7 @@ import banner from '../images/Banner.jpg';
 import ServiceCard from './ServiceCard';
 
 const Home = () => {
-    const services = useFetch('service.json');
+    const services = useFetch('/service.json');
 
     return (
         <section className='container'>

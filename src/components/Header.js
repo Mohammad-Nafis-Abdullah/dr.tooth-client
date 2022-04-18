@@ -1,3 +1,4 @@
+import { HomeIcon } from '@heroicons/react/solid';
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../images/tooth-logo.png'
@@ -14,16 +15,16 @@ const Header = () => {
             </div>
             <nav className="flex items-center justify-center gap-5 flex-wrap bg-sky-600 md:bg-transparent 
             basis-full md:basis-auto py-2 md:py-0">
+                <NavLink to='/' className={(status)=> status.isActive?'link-active':'link'}><HomeIcon className='h-6'/></NavLink>
                 <NavLink to='/checkout' className={(status)=> status.isActive?'link-active':'link'}>Checkout</NavLink>
                 <NavLink to='/blog' className={(status)=> status.isActive?'link-active':'link'}>Blog</NavLink>
                 <NavLink to='/about' className={(status)=> status.isActive?'link-active':'link'}>About</NavLink>
                 
-                {/* accordin to task no. 12 condition rendering applied for the logout button */}
                 <button 
                 className='px-3 py-1.5 rounded-full text-base text-sky-600/90 bg-white font-medium
                 md:hover:text-white md:hover:bg-sky-600/90 hover:ring-0 md:hover:py-2
                 ring-4 ring-offset-1 border-0 ring-sky-600/70 duration-200 active:scale-95'
-                onClick={()=> navigate('/login')}>Logout</button>
+                onClick={()=> navigate('/login')}>Login</button>
             </nav>
             </div>
         </section>
