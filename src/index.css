@@ -167,6 +167,29 @@
   }
 } 
 
+.fromLeft{
+  visibility: hidden;
+  animation: bounceInLeft 1s forwards .5s;
+}
+
+@keyframes bounceInLeft {
+  0% {
+      visibility: visible;
+      opacity: 0;
+      transform: translateX(-100vw);
+  }
+  60% {
+      opacity: 1;
+      transform: translateX(30px);
+  }
+  80% {
+      transform: translateX(-2px);
+  }
+  100% {
+      visibility: visible;
+      transform: translateX(0);
+  }
+} 
 
 .blog-card{
   @apply text-lg font-bold text-gray-800 basis-[27rem] grow shrink p-3 space-y-3 rounded-xl;
@@ -187,4 +210,16 @@
 
 .blog-key{
   @apply text-sky-600 ;
+}
+
+.input-container{
+  @apply relative z-0 mb-6 w-full;
+}
+
+.input-field{
+  @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-4 border-gray-900/20 appearance-none focus:outline-none focus:border-sky-600;
+}
+
+.input-label{
+  @apply absolute text-base font-medium text-gray-900 duration-300 -translate-y-6 top-3 -z-10 origin-[0];
 }
