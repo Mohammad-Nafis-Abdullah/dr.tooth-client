@@ -9,22 +9,47 @@ const Blog = () => {
                 <div  className='blog-card fromLeft'>
                     <h6><span className="Q-A">Question 1:</span> What is the difference between <span className='blog-key'>Authorization</span> & <span className='blog-key'>Authentication?</span></h6>
                     <p>
-                        <span className="Q-A">Answer :</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit adipisci, et labore ipsum necessitatibus earum laboriosam explicabo deleniti maiores unde dolorem beatae quibusdam. Alias blanditiis qui reiciendis maxime iure doloremque porro minus amet aperiam soluta quod, minima facilis veritatis! Impedit, voluptate. Optio rem quidem officia vero reprehenderit qui minus eaque perferendis, cum doloremque laboriosam sit placeat modi eum voluptates mollitia saepe debitis? Excepturi, est voluptates quasi obcaecati, quas ex dicta possimus neque nam quis sed expedita. Quaerat dolor labore enim. Odit, voluptatem ullam earum eum doloribus quas sunt fugiat vitae dolores aspernatur quam. Facilis delectus consectetur nihil? Id mollitia quo placeat temporibus quae, ipsa quibusdam nostrum accusamus, laborum saepe ab! Necessitatibus assumenda ratione, ex, autem quos vero repellat temporibus nihil provident ducimus deserunt eligendi molestiae magnam. Facilis exercitationem veniam architecto sint dolor! Nam, rerum dicta aperiam magnam qui quisquam explicabo dolore deleniti tempore aliquid nulla, reprehenderit saepe aliquam veritatis assumenda, facilis iure? Iusto illum perspiciatis quibusdam reprehenderit dicta unde voluptatum, ratione quo nihil ex corrupti deleniti quae nemo cum ullam atque repellat provident, incidunt rerum nostrum amet quis voluptas? Odio et commodi, hic impedit aliquam vel labore dolorum veniam sit eaque nisi iusto, cumque maxime aut aperiam sequi tempore.
+                        <span className="Q-A">Answer :</span><br />
+                        <strong className="blog-key">Authentication :</strong> Authentication
+                        is to verify the data of a user to give him the access for the next
+                        process of website benefits. <br />
+                        <strong className="blog-key">Authorization :</strong> Authorization
+                        is to give a user permission to use resources or to do further
+                        activities.
+                        <br />
+                        <strong>Simply,</strong> Authentication is the process of verifying
+                        who a user is, while Authorization is the process of verifying what
+                        they have access to.
                     </p>
                 </div>
                 <div className='blog-card fromRight'>
                     <h6><span className="Q-A">Question 2:</span> Why are you using <span className="blog-key">Firebase</span>? What other options do you have to implement <span className="blog-key">Authentication</span>?</h6>
                     <p>
-                        <span className="Q-A">Answer :</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse atque labore placeat. Voluptatum expedita cupiditate consectetur, cum accusantium deserunt adipisci libero totam omnis magni nam a. Iure expedita quam voluptatum, laudantium pariatur culpa at commodi mollitia nobis velit doloribus recusandae, quisquam iusto ex? Enim, eos, dignissimos illo iusto laborum sunt beatae harum temporibus commodi ea quam, nemo sed! Culpa reprehenderit quos debitis excepturi, ea minima placeat est voluptatem non atque expedita nemo. Aspernatur mollitia eum accusantium voluptates! Nemo in adipisci eum fuga quis consequuntur perspiciatis ipsa sed nesciunt ut, fugit odit reiciendis sapiente cupiditate error voluptates rerum, itaque consectetur.
+                        <span className="Q-A">Answer :</span><br />
+                        Firebase is  less technical and less time consuming than writing complete backend code for dynamic apps. If developer ultimately want to host and manage an app in the cloud and can also consider this tool. Firebase is serverless, so there is no worry about cloud server configuration technology. As a Google Cloud service, developer can also access other Google products and features such as Google Drive and spreadsheets. For example, developer can import dummy data from Google Sheets and use it temporarily to deploy the application.
+                        <br />
+                        Some firebase Alternatives are :
+                        1.Parse, 2.Back4App, 3.AWS Amplify, 4.Kuzzle, 5.Couchbase, 6.NativeScript, 7.RxDB, 8.Flutter.
                     </p>
                 </div>
                 <div className='blog-card fromBottom'>
                     <h6><span className="Q-A">Question 3:</span> What other services does <span className="blog-key">Firebase</span> provide other than <span className="blog-key">Authentication</span>?</h6>
                     <p>
-                        <span className="Q-A">Answer :</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quis alias veniam illo similique explicabo voluptas exercitationem omnis perspiciatis eligendi, repellat a aut dolor assumenda sit pariatur, unde debitis officia ut velit labore odio error repellendus eos! Obcaecati magnam aperiam excepturi voluptatem eveniet sapiente voluptate maxime a molestias eos blanditiis hic rem distinctio quisquam, praesentium dolore perferendis, placeat repellat cumque mollitia ullam minima laudantium! Eos illo officia corporis eligendi accusamus, aspernatur numquam perferendis dolorum nobis! Molestiae omnis dignissimos ullam veniam?
+                        <span className="Q-A">Answer :</span><br />
+                        <strong className='blog-key'>Firebase Analytics :</strong> Firebase Analytics presents
+                        data about the user behavior of applications and suggests the
+                        improvement of the performance.
+                        <br />
+                        <strong className='blog-key'>Cloud Messaging :</strong> Cloud Messaging is a messaging
+                        tool that helps the companies to receive and deliver messages on
+                        applications at no cost.
+                        <br />
+                        <strong className='blog-key'>Realtime Database :</strong> Realtime Database is a cloud
+                        hosted NoSQL Database that stores and syncs data of the users in
+                        real time. <br />
+                        <strong>Test Lab :</strong> Test Lab is an app testing
+                        infrastructure by which developers can test the applications easily.
+                        <br />
                     </p>
                 </div>
             </section>
