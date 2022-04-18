@@ -1,6 +1,7 @@
 import { BadgeCheckIcon } from '@heroicons/react/solid';
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import useFetch from '../hooks/useFetch';
 
 const Checkout = () => {
@@ -9,30 +10,39 @@ const Checkout = () => {
     const {id:serviceId} = params;
     const selected = services.find((service)=> service.id===serviceId);
 
+    const checkedOut = (e)=> {
+        e.preventDefault();
+        e.target.email.value = '';
+        e.target.name.value = '';
+        e.target.phone.value = '';
+        e.target.address.value = '';
+
+        selected?toast('Thanks for checking out our service'):alert('No service selected');
+    }
 
     return (
         <div className='container min-h-[calc(100vh-166.5px)] flex flex-wrap justify-center items-center px-3 py-8 gap-8'>
-            <form className='max-w-sm p-5 rounded-xl shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] w-full fromLeft'>
+            <form onSubmit={checkedOut} className='max-w-sm p-5 rounded-xl shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] w-full fromLeft'>
                 <h3 className='text-center mb-10 text-sky-600 font-medium'>Check out Form</h3>
                 <div className="input-container">
                     <input type="text" name="name" className="input-field" placeholder=" " required=""/>
-                        <label htmlFor="name" className="input-label">Name</label>
+                        <label className="input-label">Name</label>
                 </div>
                 <div className="input-container">
                     <input type="email" name="email" className="input-field" placeholder=" " required=""/>
-                        <label htmlFor="email" className="input-label">Email address</label>
+                        <label className="input-label">Email address</label>
                 </div>
                 <div className="grid xl:grid-cols-2 xl:gap-6">
                     <div className="input-container">
-                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" className="input-field" placeholder=" " required=""/>
-                            <label htmlFor="phone" className="input-label">Phone number</label>
+                        <input type="tel" name="phone" className="input-field" placeholder=" " required=""/>
+                            <label className="input-label">Phone number</label>
                     </div>
                     <div className="input-container">
                         <input type="text" name="address" className="input-field" placeholder=" " required=""/>
-                            <label htmlFor="address" className="input-label">Address</label>
+                            <label className="input-label">Address</label>
                     </div>
                 </div>
-                <button type="submit" className="block mx-auto px-16 py-1.5 rounded-md text-sky-700 font-medium
+                <button type='submit' className="block mx-auto px-16 py-1.5 rounded-md text-sky-700 font-medium
                 hover:text-white hover:bg-sky-700 border-2 border-sky-700 duration-150 active:scale-95">Submit</button>
             </form>
             {
