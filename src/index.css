@@ -224,3 +224,7 @@
 .input-label{
   @apply absolute text-base font-medium text-gray-900 duration-300 -translate-y-8 top-3 -z-10 origin-[0];
 }
+
+.visit{
+  @apply border-4 h-40 basis-96 shrink;
+}

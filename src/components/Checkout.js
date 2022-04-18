@@ -15,27 +15,21 @@ const Checkout = () => {
             <form className='max-w-sm p-5 rounded-xl shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] w-full'>
                 <h3 className='text-center mb-10 text-sky-600 font-medium'>Check out Form</h3>
                 <div className="input-container">
-                    <input type="email" name="floating_email" className="input-field" placeholder=" " required=""/>
-                        <label htmlFor="floating_email" className="input-label">Email address</label>
+                    <input type="text" name="name" className="input-field" placeholder=" " required=""/>
+                        <label htmlFor="name" className="input-label">Name</label>
+                </div>
+                <div className="input-container">
+                    <input type="email" name="email" className="input-field" placeholder=" " required=""/>
+                        <label htmlFor="email" className="input-label">Email address</label>
                 </div>
                 <div className="grid xl:grid-cols-2 xl:gap-6">
                     <div className="input-container">
-                        <input type="text" name="floating_first_name" id="floating_first_name" className="input-field" placeholder=" " required=""/>
-                            <label htmlFor="floating_first_name" className="input-label">First name</label>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" className="input-field" placeholder=" " required=""/>
+                            <label htmlFor="phone" className="input-label">Phone number</label>
                     </div>
                     <div className="input-container">
-                        <input type="text" name="floating_last_name" id="floating_last_name" className="input-field" placeholder=" " required=""/>
-                            <label htmlFor="floating_last_name" className="input-label">Last name</label>
-                    </div>
-                </div>
-                <div className="grid xl:grid-cols-2 xl:gap-6">
-                    <div className="input-container">
-                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" className="input-field" placeholder=" " required=""/>
-                            <label htmlFor="floating_phone" className="input-label">Phone number</label>
-                    </div>
-                    <div className="input-container">
-                        <input type="text" name="floating_company" id="floating_company" className="input-field" placeholder=" " required=""/>
-                            <label htmlFor="floating_company" className="input-label">Address</label>
+                        <input type="text" name="address" className="input-field" placeholder=" " required=""/>
+                            <label htmlFor="address" className="input-label">Address</label>
                     </div>
                 </div>
                 <button type="submit" className="block mx-auto px-16 py-1.5 rounded-md text-sky-700 font-medium

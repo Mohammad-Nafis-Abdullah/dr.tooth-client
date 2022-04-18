@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 import Register from "./components/Register";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {

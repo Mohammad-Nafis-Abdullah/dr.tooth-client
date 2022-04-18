@@ -15,6 +15,15 @@ const Home = () => {
                     services.map(service => <ServiceCard key={service.id} service={service}/>)
                 }
             </div>
+            <h2 className='text-center underline text-sky-700/90 mt-24 mb-8 font-medium font-serif'>Visiting Hour</h2>
+            <div className='flex justify-center gap-8 mb-10 border-4 p-3'>
+                <div className="visit fromLeft">
+
+                </div>
+                <div className="visit fromRight">
+
+                </div>
+            </div>
         </section>
     );
 };
