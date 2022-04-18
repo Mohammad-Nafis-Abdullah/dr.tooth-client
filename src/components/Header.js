@@ -3,9 +3,10 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import auth from '../firebase.init';
-import logo from '../images/tooth-logo.png'
+import { trimError } from '../hooks/trimError';
+import logo from '../images/tooth-logo.png';
 
 const Header = () => {
     const [authUser, , ] = useAuthState(auth);
@@ -15,26 +16,15 @@ const Header = () => {
     const logout = ()=> {
         signOut(auth).then(() => {
             toast('User logged out');
+            navigate('/');
         }).catch((error) => {
-            const errorMsg = error.code.slice(5).split('-').join(' ').toUpperCase();
+            const errorMsg = trimError(error);
             toast(errorMsg);
         });
-        navigate('/');
     }
 
     return (
         <section className='shadow-md'>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
             <div className='container md:h-20 md:px-3 flex justify-center md:justify-between items-center flex-wrap gap-5'>
             <div className='flex justify-center items-center text-xl gap-2 font-medium text-slate-900 pt-2 md:pt-0'>
                 <img src={logo} className='cursor-pointer h-16' alt="" onClick={()=> navigate('/')}/>

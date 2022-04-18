@@ -12,7 +12,7 @@ const Checkout = () => {
 
     return (
         <div className='container min-h-[calc(100vh-166.5px)] flex flex-wrap justify-center items-center px-3 py-8 gap-8'>
-            <form className='max-w-sm p-5 rounded-xl shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] w-full'>
+            <form className='max-w-sm p-5 rounded-xl shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] w-full fromLeft'>
                 <h3 className='text-center mb-10 text-sky-600 font-medium'>Check out Form</h3>
                 <div className="input-container">
                     <input type="text" name="name" className="input-field" placeholder=" " required=""/>
@@ -37,7 +37,7 @@ const Checkout = () => {
             </form>
             {
                 selected && 
-                <div className='max-w-sm w-full flex justify-center items-center p-3 shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] rounded-xl gap-3'>
+                <div className='max-w-sm w-full flex justify-center items-center p-3 shadow-[0_0_15px_1px_rgba(0,0,0,0.343)] rounded-xl gap-3 fromRight'>
                     <img className='h-28 w-36 object-cover rounded-md' src={'/'+selected?.imgSrc} alt="" />
                     <div className='text-center font-medium space-y-3 grow'>
                         <h5 className='text-sky-700 flex justify-center items-center'><BadgeCheckIcon className='h-8 text-sky-700'/>{selected?.name}</h5>
