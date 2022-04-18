@@ -16,12 +16,20 @@ const Home = () => {
                 }
             </div>
             <h2 className='text-center underline text-sky-700/90 mt-24 mb-8 font-medium font-serif'>Personal Chamber</h2>
-            <div className='flex justify-center gap-8 mb-10 border-4 p-3'>
-                <div className="extra fromLeft">
-
+            <div className='flex justify-center gap-8 mb-10 p-3'>
+                <div className="extra">
+                    <h5 className='text-center font-medium text-white'>Chamber 1 : Chittagong</h5>
+                    <address>Halishahar, K-block R/A , Road No. 05 </address>
+                    <p>Telephone : 03148579325</p>
+                    <p>Visiting Day : Sat, Mon, Wed</p>
+                    <p>Visition Time : 6:00pm - 12:00am</p>
                 </div>
-                <div className="extra fromRight">
-
+                <div className="extra">
+                    <h5 className='text-center'>Chamber 2 : Dhaka</h5>
+                    <address>Halishahar, K-block R/A , Road No. 05 </address>
+                    <p>Telephone : 0314462325</p>
+                    <p>Visiting Day : Sun, Tue, Thu</p>
+                    <p>Visition Time : 6:00pm - 12:00am</p>
                 </div>
             </div>
         </section>

@@ -250,5 +250,7 @@
 }
 
 .extra{
-  @apply border-4 h-40 basis-96 shrink;
+  @apply basis-96 shrink py-3 px-5 rounded-xl bg-sky-600 space-y-3 text-white font-medium border-[3px] border-sky-800 
+  hover:scale-110 duration-300 hover:ring-4 ring-offset-2 ring-sky-600;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.343);
 }
